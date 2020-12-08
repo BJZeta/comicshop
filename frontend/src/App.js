@@ -1,7 +1,20 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-function App() {
-  return <>Welcome to Comic Shop Pullbox</>;
-}
+const App = () => {
+  return (
+    <>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <h1>Comic Pullbox</h1>
+        </Container>
+      </main>
+      <Footer />
+    </>
+  );
+};
 
 export default App;
