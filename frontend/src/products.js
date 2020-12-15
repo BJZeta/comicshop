@@ -85,7 +85,7 @@ const products = [
     price: 19.99,
     countInStock: [
       {
-        image: "/images/legends-doom.jpg",
+        image: "/images/legends-doom.jpeg",
         toyName: "Doctor Doom",
         stock: 2,
       },
