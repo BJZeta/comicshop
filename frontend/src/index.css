@@ -1,3 +1,16 @@
 main {
   min-height: 80vh;
 }
+
+h3 {
+  padding: 1rem 0;
+}
+
+.card-image {
+  max-height: 15rem;
+  margin: auto;
+}
+
+.rating span {
+  margin: 0 0.1rem;
+}
