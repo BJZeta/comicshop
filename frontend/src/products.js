@@ -65,10 +65,10 @@ const products = [
   },
   {
     _id: "5",
-    name: "Dungeons & Dragons: Beginner Set",
+    name: "Dungeons & Dragons: Starter Set",
     image: "/images/d&dset.jpg",
     description:
-      "Start your journey with friends in the world's most popular pen and paper table-top rpg, Dungeons & Dragons, in the Dungeons & Dragons: Beginner Set",
+      "Start your journey with friends in the world's most popular pen and paper table-top rpg, Dungeons & Dragons, in the Dungeons & Dragons: Starter Set",
     brand: "Wizards of the Coas",
     category: "Board Games",
     price: 12.99,
