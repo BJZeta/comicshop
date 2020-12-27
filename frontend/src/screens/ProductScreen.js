@@ -17,7 +17,7 @@ const ProductScreen = ({ match }) => {
         Go Back
       </Link>
       <Row>
-        <Col md={6}>
+        <Col md={6} className="text-center">
           <Image
             src={
               product.countInStock[0]
@@ -25,7 +25,7 @@ const ProductScreen = ({ match }) => {
                 : product.image
             }
             alt={product.name}
-            fluid
+            width={"75%"}
           />
         </Col>
         <Col md={3}>

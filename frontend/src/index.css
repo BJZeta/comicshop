@@ -17,3 +17,8 @@ h3 {
 .rating span {
   margin: 0 0.1rem;
 }
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
