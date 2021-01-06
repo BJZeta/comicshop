@@ -9,11 +9,7 @@ const Product = ({ product }) => {
       <Link to={`/product/${product._id}`}>
         <Card.Img
           className="card-image"
-          src={
-            product.countInStock[0]
-              ? product.countInStock[0].image
-              : product.image
-          }
+          src={product.image}
           variant="top"
         />
       </Link>
