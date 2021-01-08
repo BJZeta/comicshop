@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Superman T-Shirt (LARGE)",
     image: "/images/superman-tshirt.jpg",
     description: "Superman S Shield T-Shirt",
@@ -12,7 +11,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Batman T-Shirt (LARGE)",
     image: "/images/batman-tshirt.jpg",
     description: "Batman Logo T-Shirt",
@@ -24,7 +22,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Spider-Man: Far From Home Statue",
     image: "/images/spiderman-statue.jpg",
     description:
@@ -37,7 +34,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Batman: Three Jokers",
     image: "/images/three-jokers.jpg",
     description:
@@ -50,7 +46,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Dungeons & Dragons: Starter Set",
     image: "/images/d&dset.jpg",
     description:
@@ -63,7 +58,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Marvel Legends: Doctor Doom",
     image: "/images/legends-doom.jpeg",
     description: "6 inch, high detailed figurine",
@@ -75,7 +69,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "7",
     name: "Marvel Legends: Spider-Man",
     image: "/images/legends-spiderman.jpg",
     description: "6 inch, high detailed figurine",
