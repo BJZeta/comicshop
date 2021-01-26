@@ -6,7 +6,7 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listUsers, deleteUser } from "../actions/userActions";
 
-const UserListScreen = ({history}) => {
+const UserListScreen = ({ history }) => {
   const dispatch = useDispatch();
 
   const userList = useSelector((state) => state.userList);
@@ -18,22 +18,21 @@ const UserListScreen = ({history}) => {
   const userDelete = useSelector((state) => state.userDelete);
   const { success: successDelete } = userDelete;
 
-
   useEffect(() => {
-      if(userInfo && userInfo.isAdmin) {
-        dispatch(listUsers());
-      }else {
-          history.push('/login')
-      }
+    if (userInfo && userInfo.isAdmin) {
+      dispatch(listUsers());
+    } else {
+      history.push("/login");
+    }
   }, [dispatch, history, userInfo, successDelete]);
 
   const deleteUserHandler = (id) => {
-      if(window.confirm('Are You Sure?')) {
-        dispatch(deleteUser(id));
-        // eslint-disable-next-line no-restricted-globals
-        location.reload();
-      }
-  }
+    if (window.confirm("Are You Sure?")) {
+      dispatch(deleteUser(id));
+      // eslint-disable-next-line no-restricted-globals
+      location.reload();
+    }
+  };
 
   return (
     <>
@@ -69,7 +68,7 @@ const UserListScreen = ({history}) => {
                   )}
                 </td>
                 <td>
-                  <LinkContainer to={`/user/${user._id}/edit`}>
+                  <LinkContainer to={`/admin/user/${user._id}/edit`}>
                     <Button variant="light" className="btn-md">
                       <i className="fas fa-edit"></i>
                     </Button>
@@ -79,7 +78,7 @@ const UserListScreen = ({history}) => {
                     className="btn-md"
                     onClick={() => deleteUserHandler(user._id)}
                   >
-                      <i className="fas fa-trash"></i>
+                    <i className="fas fa-trash"></i>
                   </Button>
                 </td>
               </tr>
