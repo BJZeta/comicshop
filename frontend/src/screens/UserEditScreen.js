@@ -92,7 +92,7 @@ const UserEditScreen = ({ match, history }) => {
               />
             </Form.Group>
 
-            <Button type="submit" variant="primary" onClick={(e) => submitHandler(e)}>
+            <Button type="submit" variant="primary">
               Update
             </Button>
           </Form>
